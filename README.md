@@ -1,20 +1,11 @@
-## SETUP TAILWIND-CSS
+## ReCaptcha v3 with NextJS
 
-Full set up guide here: https://tailwindcss.com/docs/guides/nextjs
+### Set up reCaptcha Keys
+https://www.google.com/recaptcha/admin/create
 
-Install
+## Put keys to .env.local
 
 ```
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY="..."
+RECAPTCHA_SECRET_KEY="..."
 ```
-
-Create cofngir files:
-```
-npx tailwindcss init -p
-```
-
-Set up to remove unused styles in production. In tailwind.config.js. Update "purge" prop to:
-```
-purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-```
-
